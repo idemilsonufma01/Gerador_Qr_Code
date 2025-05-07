@@ -5,12 +5,14 @@
     <title>Gerador de QR Code</title>
 </head>
 <body>
-    <h1>Gerador de QR Code</h1>
-    <form method="post">
-        <label for="texto">Texto ou link:</label><br>
-        <input type="text" id="texto" name="texto" required style="width: 400px;"><br><br>
-        <input type="submit" value="Gerar QR Code">
-    </form>
+    <div>
+        <h1 style="color: blueviolet;">Gerador de QR Code</h1>
+        <form method="post">
+            <label for="texto">Texto ou link:</label><br>
+            <input type="text" id="texto" name="texto" required style="width: 400px;"><br><br>
+            <input type="submit" value="Gerar QR Code">
+        </form>
+    </div>
 
     {% if qr_path %}
         <h2>QR Code Gerado:</h2>
